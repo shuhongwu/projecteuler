@@ -125,12 +125,12 @@
 	unsigned int j = 0;
 	do{
 		i+=20;
-		for(j = 3; j < 21; j++){
+		for(j = 3; j < 20; j++){
 			if(i%j != 0)
 				break;
 		}
 	}while(j<20);
-	printf("here it is: %d", i);
+	printf("result: %d", i);
     
     
     
