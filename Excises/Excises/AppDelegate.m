@@ -121,6 +121,17 @@
      */
     
     
+    unsigned int i = 2500;
+	unsigned int j = 0;
+	do{
+		i+=20;
+		for(j = 3; j < 21; j++){
+			if(i%j != 0)
+				break;
+		}
+	}while(j<20);
+	printf("here it is: %d", i);
+    
     
     
     
