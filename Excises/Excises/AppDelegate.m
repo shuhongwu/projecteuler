@@ -120,7 +120,6 @@
      What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
      */
     
-    
     unsigned int i = 2500;
 	unsigned int j = 0;
 	do{
