@@ -142,11 +142,22 @@
      Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025  385 = 2640.
      
      Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
-     */
+     
     
+    int result=0;
+    int result2=0;
+    for(int i=1;i<101;i++){
     
-    
-    
+        result=i*i +result;
+    }
+    for(int i=1;i<101;i++){
+        
+        result2=i+result2;
+    }
+    NSLog(@"result...%d",result2*result2 - result);
+     
+    //note: stupid method 
+    */
     
     
     
