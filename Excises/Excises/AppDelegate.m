@@ -160,22 +160,40 @@
     */
     
     
+    /*
+    By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
     
+    What is the 10 001st prime number?
+    */
     
+    int i=7;
+    int init=13;
     
+    do{
+		init+=2;
+        if(![self judgeIsPrimeNumber:init])
+            continue;
+        i++;
+	}while(i<10002);
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    NSLog(@"result...%d",init);
     
     
 }
+
+-(BOOL)judgeIsPrimeNumber:(int)num{
+
+    if (num<2) {
+        return FALSE;
+    }
+    
+    for(int i=2;sqrt(num)>=i;i++){
+        
+        if(num%i==0) return FALSE;
+    }
+    return TRUE;
+}
+
+
 
 @end
